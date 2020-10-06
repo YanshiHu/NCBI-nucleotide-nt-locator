@@ -1,0 +1,23 @@
+https://www.ncbi.nlm.nih.gov/gene/?term=(SKIV2L%5Bgene%5D)+AND+(Homo+sapiens%5Borgn%5D)
+
+<h3 class="genomerefseqs gene_std_toggler" id="refseqset-independent">
+...>NM_006929.4</a> → <a href=...
+<h3 class="genomerefseqs gene_std_toggler" id="annotatedrefseq-title">
+
+https://www.ncbi.nlm.nih.gov/nuccore/()		#(): NM_006929.4
+<meta name="ncbi_uidlist" content="()" />	#(): 67782310
+https://www.ncbi.nlm.nih.gov/sviewer/viewer.cgi?tool=portal&save=file&log$=seqview&db=nuccore&report=genbank&id=67782310&maxplex=1
+		#genbank info
+CDS             390..4130
+/translation="MM..TQ"
+https://www.ncbi.nlm.nih.gov/sviewer/viewer.cgi?tool=portal&save=file&log$=seqview&db=nuccore&report=fasta&id=67782310
+		#nt sequence info
+Codon table (U -> T)
+mutated nt location
+
+
+
+
+
+
+
