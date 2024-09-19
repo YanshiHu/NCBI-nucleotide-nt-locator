@@ -1,7 +1,7 @@
 %%% NCBI nt(nucleotide) position locator %%%
 
-% Developer: Yanshi Hu, M.S., Ph.D. Candidate
-% Affiliation: Department of Bioinformatics, State Key Laboratory of Plant Physiology and Biochemistry, College of Life Sciences, Zhejiang University
+% Developer: Yanshi Hu, PhD, MPhil
+% Affiliation: Department of Bioinformatics, College of Life Sciences, Zhejiang University
 
 
 % ----------------USAGE-------------------%
@@ -49,7 +49,7 @@ for i = 1:length(q(:, 1))
     aalist = {}; % 'S>F' pattern storage
 
     % Processing for the requested table %   
-    a = regexp(q{i, 1}, '((?<=[£¨\(]+).*(?=[\)£©]+))', 'match');
+    a = regexp(q{i, 1}, '((?<=[Â£Â¨\(]+).*(?=[\)Â£Â©]+))', 'match');
     if isempty(a) % Currently, incompatible with this kind of gene format!
         finalist(lsnum, 1:5) = [q(i, 1), {upper(q{i, 2})}, {''}, {''}, {''}]; 
         lsnum = lsnum + 1;
@@ -62,9 +62,9 @@ for i = 1:length(q(:, 1))
     end
 
     % Extracting mRNA NCBI Reference Sequence IDs for a specific gene in the requested table %
-    b = regexp(q{i, 1}, '^[^\s(£¨]+', 'match'); % extracting gene symbol
+    b = regexp(q{i, 1}, '^[^\s(Â£Â¨]+', 'match'); % extracting gene symbol
     
-    if strcmp(b{1}(1), '¦Â')
+    if strcmp(b{1}(1), 'Â¦Ã‚')
         qqq = b{1}(2:length(b{1}));
         b{1} = ['%CE%B2', qqq];
     end        
